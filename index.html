@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+</head>
+
+<body>
+  <form>
+    <h1>회원가입</h1>
+    <div>email : <input id="singUpEmail" type="email"></div>
+    <div>
+      password : <input id="singUpPassword" type="password">
+    </div>
+    <button type="submit" id="signUpButton">회원가입하기</button>
+    <button>로그인하러하기</button>
+  </form>
+
+  <form>
+    <h1>로그인</h1>
+    <div>email : <input id="singInEmail" type="email"></div>
+    <div>
+      password : <input id="singInPassword" type="password">
+    </div>
+    <button type="submit" id="signInButton">로그인하기</button>
+    <button>회원가입하러하기</button>
+  </form>
+
+  <script src="./config.js"></script>
+  <script type="module" src="./firebase.js"></script>
+</body>
+
+</html>
