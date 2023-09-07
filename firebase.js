@@ -56,7 +56,7 @@ document.getElementById('signInButton').addEventListener('click', (event) => {
     });
 })
 
-// 
+// 리얼타임 데이터베이스 코드들
 firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
