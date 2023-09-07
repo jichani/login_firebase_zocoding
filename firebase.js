@@ -56,5 +56,27 @@ document.getElementById('signInButton').addEventListener('click', (event) => {
     });
 })
 
+// 
+firebase.initializeApp(firebaseConfig);
 
+const database = firebase.database();
 
+// 데이터 저장
+// database.ref('상담내용').set({
+//   "이름": "임지찬",
+//   "번호": "01086727571",
+//   "문의내용": "A학점이 받고싶어요"
+// });
+
+// 데이터 불러오기
+// database.ref("students").on("value", snapshot => {
+//   const object = snapshot.val();
+//   document.querySelector("#container").innerHTML =
+//     object.full_name + ", " + object.grade + ", " + object.age;
+// });
+
+// 데이터 업데이트
+// database.ref("students").update({ 'age': 17, 'grade': 'B' });
+
+// 데이터 삭제
+// database.ref("students").remove();
